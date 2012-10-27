@@ -45,7 +45,7 @@ for BUILDPACK in $(cat $1/.buildpacks); do
       fi
 
       $dir/bin/release $1 > $1/last_pack_release.out
-      echo "Result from $dir/bin/release:"
+      echo "Result from $dir/bin/release, saved to $1/last_pack_release.out:"
       cat $1/last_pack_release.out
     fi
   fi
